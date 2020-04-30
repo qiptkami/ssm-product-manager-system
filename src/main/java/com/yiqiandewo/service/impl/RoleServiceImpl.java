@@ -35,4 +35,18 @@ public class RoleServiceImpl implements IRoleService {
         return list;
     }
 
+    @Override
+    public boolean changePassword(String username, String password, String newPassword) {
+        String pwd = roleDao.findPassword(username);
+
+        if (!pwd.equals(password)) {
+            return false;
+        } else {
+            Role role = new Role();
+            role.setUsername(username);
+            role.setPassword(newPassword);
+            roleDao.changePassword(role);
+            return true;
+        }
+    }
 }

@@ -162,7 +162,7 @@
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
-				<li><a href="#">日志管理</a></li>
+				<li><a href="${pageContext.request.contextPath}/sysLog/findAll">日志管理</a></li>
 				<li class="active">日志列表</li>
 			</ol>
 		</section>
@@ -210,7 +210,7 @@
 						<!--工具栏/-->
 
 						<!--数据列表-->
-						<form id="delForm" action="/sysLog/del" method="post">
+						<form id="delForm" action="${pageContext.request.contextPath}/sysLog/del" method="post">
 							<table id="dataList" class="table table-bordered table-striped table-hover dataTable">
 								<thead>
 								<tr>
@@ -237,9 +237,7 @@
 										<td>${log.endTime}</td>
 										<td class="text-center">
 											<button type="button" class="btn bg-olive btn-xs"
-													onclick="location.href = '${pageContext.request.contextPath}/log/findById/${log.logId}'">详情</button>
-											<button type="button" class="btn bg-olive btn-xs"
-													onclick="location.href = '${pageContext.request.contextPath}/log/del/${log.logId}'">删除</button>
+													onclick="location.href = '${pageContext.request.contextPath}/sysLog/del/${log.logId}'">删除</button>
 										</td>
 									</tr>
 								</c:forEach>

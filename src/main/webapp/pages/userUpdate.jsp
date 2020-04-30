@@ -85,7 +85,7 @@
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i
                         class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a
-                        href="${pageContext.request.contextPath}//findAll">用户管理</a></li>
+                        href="${pageContext.request.contextPath}/user/findAll">用户管理</a></li>
                 <li class="active">用户表单</li>
             </ol>
         </section>
@@ -101,7 +101,7 @@
 
                         <div class="col-md-2 title">用户编号</div>
                         <div class="col-md-4 data">
-                            <input type="text" class="form-control" name="userId"
+                            <input type="text" class="form-control" name="userId" readonly="readonly"
                                    placeholder="用户编号..." value="${user.userId}">
                         </div>
 

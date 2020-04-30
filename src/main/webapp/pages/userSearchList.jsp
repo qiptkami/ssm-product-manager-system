@@ -11,7 +11,7 @@
 
 
 
-    <title>产品查询结果</title>
+    <title>用户查询结果</title>
     <meta name="description" content="AdminLTE2定制版">
     <meta name="keywords" content="AdminLTE2定制版">
 
@@ -159,12 +159,12 @@
         <!-- 内容头部 -->
         <section class="content-header">
             <h1>
-                数据管理 <small>数据列表</small>
+                用户管理 <small>用户列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
-                <li><a href="#">数据管理</a></li>
-                <li class="active">数据列表</li>
+                <li><a href="${pageContext.request.contextPath}/user/findAll">用户管理</a></li>
+                <li class="active">用户列表</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -196,7 +196,7 @@
                         <!--工具栏/-->
 
                         <!--数据列表-->
-                        <form id="delForm" action="/user/del" method="post">
+                        <form id="delForm" action="${pageContext.request.contextPath}/user/del" method="post">
                             <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                                 <thead>
                                 <tr>
@@ -211,7 +211,7 @@
                                 </thead>
                                 <tbody>
 
-                                <c:forEach items="${pageInfo.list}" var="user">
+                                <c:forEach items="${searchList}" var="user">
                                     <tr>
                                         <td><input name="ids" type="checkbox" value="${user.userId}"></td>
                                         <td>${user.userId}</td>
@@ -242,7 +242,7 @@
                 <div class="box-footer">
                     <div class="pull-left">
                         <div class="form-group form-inline">
-                            总共 ${pageInfo.total} 条数据。
+                            总共 ${searchList.size()} 条数据。
                         </div>
                     </div>
 

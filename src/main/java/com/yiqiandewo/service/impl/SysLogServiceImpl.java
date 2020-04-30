@@ -25,4 +25,19 @@ public class SysLogServiceImpl implements ISysLogService {
     public void save(SysLog sysLog) {
         sysLogDao.save(sysLog);
     }
+
+    @Override
+    public void del(Integer logId) {
+        sysLogDao.del(logId);
+    }
+
+    @Override
+    public List<SysLog> findByStr(String str) {
+        List<SysLog> list = sysLogDao.findByUsername(str);
+        List<SysLog> list1 = sysLogDao.findByUrl(str);
+        list.addAll(list1);
+        return list;
+    }
+
+
 }

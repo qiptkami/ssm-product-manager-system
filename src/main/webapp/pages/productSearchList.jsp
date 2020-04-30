@@ -159,12 +159,12 @@
         <!-- 内容头部 -->
         <section class="content-header">
             <h1>
-                数据管理 <small>数据列表</small>
+                产品管理 <small>产品列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
-                <li><a href="#">数据管理</a></li>
-                <li class="active">数据列表</li>
+                <li><a href="${pageContext.request.contextPath}/product/findAll">产品管理</a></li>
+                <li class="active">产品列表</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -196,7 +196,7 @@
                         <!--工具栏/-->
 
                         <!--数据列表-->
-                        <form id="delForm" action="/product/del" method="post">
+                        <form id="delForm" action="${pageContext.request.contextPath}/product/del" method="post">
                             <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                                 <thead>
                                 <tr>
@@ -211,7 +211,7 @@
                                 </thead>
                                 <tbody>
 
-                                <c:forEach items="${pageInfo.list}" var="product">
+                                <c:forEach items="${searchList}" var="product">
                                     <tr>
                                         <td><input name="ids" type="checkbox" value="${product.productId}"></td>
                                         <td>${product.productId}</td>
@@ -240,7 +240,7 @@
                 <div class="box-footer">
                     <div class="pull-left">
                         <div class="form-group form-inline">
-                            总共 ${pageInfo.pageSize} 条数据。
+                            总共 ${searchList.size()} 条数据。
                         </div>
                     </div>
 

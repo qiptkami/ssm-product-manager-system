@@ -6,6 +6,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -40,17 +41,9 @@ public class LogAop {
 
         try {
             clazz = pcj.getTarget().getClass(); //具体要访问的类
-            String methodName = pcj.getSignature().getName(); //获取访问的方法的名称
-            Object[] args = pcj.getArgs();//得到方法执行所需的参数
-            if (args == null || args.length == 0) {
-                method = clazz.getMethod(methodName);
-            } else {
-                Class[] classArgs = new Class[args.length];
-                for (int i = 0; i < args.length; i++) {
-                    classArgs[i] = args[i].getClass();
-                }
-                method = clazz.getMethod(methodName, classArgs);
-            }
+            MethodSignature methodSignature = (MethodSignature)pcj.getSignature();
+            method = methodSignature.getMethod();
+
             rtVal = pcj.proceed();  //明确切入点方法的调用
         } catch (Throwable throwable) {
             throwable.printStackTrace();

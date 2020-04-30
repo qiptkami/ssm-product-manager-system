@@ -57,14 +57,11 @@ public class UserController {
     }
 
     @RequestMapping("/search")
-    public ModelAndView search(@RequestParam String str,
-                               @RequestParam(name = "page", required = true, defaultValue = "1") int page,
-                               @RequestParam(name = "size", required = true, defaultValue = "4") int size) {
+    public ModelAndView search(@RequestParam String str) {
         ModelAndView mv = new ModelAndView();
         if (str != null) {
-            List<User> searchList = userService.findByStr(str, page, size);
-            PageInfo pageInfo = new PageInfo(searchList);
-            mv.addObject("pageInfo", pageInfo);
+            List<User> searchList = userService.findByStr(str);
+            mv.addObject("searchList", searchList);
             mv.setViewName("/userSearchList");
         }
 

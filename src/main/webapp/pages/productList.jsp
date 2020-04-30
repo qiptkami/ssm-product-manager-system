@@ -159,12 +159,12 @@
         <!-- 内容头部 -->
         <section class="content-header">
             <h1>
-                数据管理 <small>数据列表</small>
+                产品管理 <small>产品列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
-                <li><a href="#">数据管理</a></li>
-                <li class="active">数据列表</li>
+                <li><a href="${pageContext.request.contextPath}/product/findAll">产品管理</a></li>
+                <li class="active">产品列表</li>
             </ol>
         </section>
         <!-- 内容头部 /-->
@@ -205,7 +205,7 @@
                         <!--工具栏/-->
 
                         <!--数据列表-->
-                        <form id="delForm" action="/product/del" method="post">
+                        <form id="delForm" action="${pageContext.request.contextPath}/product/del" method="post">
                             <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                                 <thead>
                                 <tr>
@@ -447,7 +447,7 @@
 
     $("#search").click(function () {
         var str = $("#text").val();
-        location.href='${pageContext.request.contextPath}/product/search?page=1&pageSize=5&str='+str;
+        location.href='${pageContext.request.contextPath}/product/search?str='+str;
     })
 
 </script>

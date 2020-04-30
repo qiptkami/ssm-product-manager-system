@@ -8,7 +8,7 @@ public interface IProductService {
 
     List<Product> findAll(int page, int size);
 
-    List<Product> findByStr(String str, int page, int size);
+    List<Product> findByStr(String str);
 
     Product findById(Integer id);
 

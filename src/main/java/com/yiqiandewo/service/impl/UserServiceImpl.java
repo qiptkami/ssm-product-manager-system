@@ -42,8 +42,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public List<User> findByStr(String str, int page, int size) {
-        PageHelper.startPage(page, size);
+    public List<User> findByStr(String str) {
         List<User> list = userDao.findByName(str);
         List<User> list1 = userDao.findByUsername(str);
         list.addAll(list1);

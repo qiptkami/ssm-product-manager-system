@@ -6,10 +6,12 @@ import com.yiqiandewo.service.ISysLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -29,4 +31,35 @@ public class SysLogController {
         mv.setViewName("/sysLogList");
         return mv;
     }
+
+    @RequestMapping("/del/{logId}")
+    public String del(@PathVariable Integer logId) {
+        sysLogService.del(logId);
+        return "forward:/sysLog/findAll";
+    }
+
+    @RequestMapping("/del")
+    public String delProducts(HttpServletRequest request) {
+
+        String[] ids = request.getParameterValues("ids");
+        for (String id : ids) {
+            if (id != null) {
+                sysLogService.del(Integer.valueOf(id));
+            }
+        }
+        return "forward:/sysLog/findAll";
+    }
+
+    @RequestMapping("/search")
+    public ModelAndView search(@RequestParam String str) {
+        ModelAndView mv = new ModelAndView();
+        if (str != null) {
+            List<SysLog> searchList = sysLogService.findByStr(str);
+            mv.addObject("searchList", searchList);
+            mv.setViewName("/sysLogSearchList");
+        }
+
+        return mv;
+    }
+
 }

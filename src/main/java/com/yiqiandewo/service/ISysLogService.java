@@ -9,4 +9,8 @@ public interface ISysLogService {
     List<SysLog> findAll(int page, int size);
 
     void save(SysLog sysLog);
+
+    void del(Integer logId);
+
+    List<SysLog> findByStr(String str);
 }

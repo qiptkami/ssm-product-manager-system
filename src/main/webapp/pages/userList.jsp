@@ -163,7 +163,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
-                <li><a href="#">用户管理</a></li>
+                <li><a href="${pageContext.request.contextPath}/user/findAll">用户管理</a></li>
                 <li class="active">全部用户</li>
             </ol>
         </section>
@@ -205,7 +205,7 @@
                         <!--工具栏/-->
 
                         <!--数据列表-->
-                        <form id="delForm" action="/user/del" method="post">
+                        <form id="delForm" action="${pageContext.request.contextPath}/user/del" method="post">
                             <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                                 <thead>
                                 <tr>
@@ -447,7 +447,7 @@
 
     $("#search").click(function () {
         var str = $("#text").val();
-        location.href='${pageContext.request.contextPath}/user/search?page=1&pageSize=5&str='+str;
+        location.href='${pageContext.request.contextPath}/user/search?str='+str;
     })
 
 </script>

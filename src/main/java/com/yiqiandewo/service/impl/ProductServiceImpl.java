@@ -22,8 +22,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public List<Product> findByStr(String str, int page, int size) {
-        PageHelper.startPage(page, size);
+    public List<Product> findByStr(String str) {
         List<Product> list = productDao.findByName(str);
         List<Product> list1 = productDao.findByDesc(str);
         list.addAll(list1);

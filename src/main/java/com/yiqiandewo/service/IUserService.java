@@ -16,5 +16,5 @@ public interface IUserService {
 
     void updateUser(User user);
 
-    List<User> findByStr(String str, int page, int size);
+    List<User> findByStr(String str);
 }

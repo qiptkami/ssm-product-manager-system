@@ -42,7 +42,6 @@ public class ProductController {
     @RequestMapping("/del/{productId}")
     public String delProduct(@PathVariable Integer productId) {
         productService.delProduct(productId);
-        System.out.println(productId);
         return "forward:/product/findAll";
     }
 
@@ -59,14 +58,11 @@ public class ProductController {
     }
 
     @RequestMapping("/search")
-    public ModelAndView search(@RequestParam String str,
-                               @RequestParam(name = "page", required = true, defaultValue = "1") Integer page,
-                               @RequestParam(name = "size", required = true, defaultValue = "4") Integer size) {
+    public ModelAndView search(@RequestParam String str) {
         ModelAndView mv = new ModelAndView();
         if (str != null) {
-            List<Product> searchList = productService.findByStr(str, page, size);
-            PageInfo pageInfo = new PageInfo(searchList);
-            mv.addObject("pageInfo", pageInfo);
+            List<Product> searchList = productService.findByStr(str);
+            mv.addObject("searchList", searchList);
             mv.setViewName("/productSearchList");
         }
 
