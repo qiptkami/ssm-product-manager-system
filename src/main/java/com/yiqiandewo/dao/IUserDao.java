@@ -36,7 +36,7 @@ public interface IUserDao {
     @Results(id = "findOrdersByUsernameMap", value = {
             @Result(id = true, column = "userId", property = "userId"),
             @Result(column = "username", property = "username"),
-            @Result(column = "userId", property = "orders", javaType = java.util.List.class, many = @Many(select="com.yiqiandewo.dao.IOrderDao.findOrdersByUserId", fetchType = FetchType.LAZY)),
+            @Result(column = "userId", property = "orders", javaType = java.util.List.class ,many = @Many(select="com.yiqiandewo.dao.IOrderDao.findOrdersByUserId", fetchType = FetchType.LAZY)),
     })
     //由用户名查找出所有该用户的订单
     User findOrdersByUsername(String username);

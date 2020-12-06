@@ -31,7 +31,7 @@ public class ProductController {
         mv.addObject("pageInfo", pageInfo);
         mv.setViewName("/productList");
         return mv;
-}
+    }
 
     @RequestMapping("/save")
     public String saveProduct(Product product) {
