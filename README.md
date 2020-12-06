@@ -1,4 +1,4 @@
-# SSM_productManagerSystem
+# ssm-product-manager-system
 
 首次整合IDEA和GitHub
 
