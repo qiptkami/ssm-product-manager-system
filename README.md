@@ -6,7 +6,7 @@
 
 基于spring + springmvc + mybatis的管理系统
 
-使用spring aop 进行日志记录，视图页面使用jsp，spring security登录验证和权限控制，thymeleaf模板引擎渲染页面，mybatis框架简化数据库操作，使用pageHelper对结果进行分页显示
+使用spring aop 进行日志记录，视图页面使用jsp，spring security登录验证和权限控制，mybatis框架简化数据库操作，使用pageHelper对结果进行分页显示
 
 
 
