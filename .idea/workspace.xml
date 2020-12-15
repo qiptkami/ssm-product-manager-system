@@ -24,26 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf1a93d4-4edc-48c0-b4a5-0e70a52752a9" name="Default Changelist" comment="修改了aop的bug 完善了日志查询、日志删除、修改密码功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yiqiandewo/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/changePassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/changePwdFail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/sysLogSearchList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem/pages/sysLogSearchList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yiqiandewo/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yiqiandewo/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yiqiandewo/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yiqiandewo/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringSecurity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringSecurity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_productManagerSystem.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/dao/IRoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/dao/IRoleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/service/IRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/service/IRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem/WEB-INF/classes/com/yiqiandewo/service/impl/RoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_productManagerSystem/pages/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_productManagerSystem/pages/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yiqiandewo/dao/IRoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yiqiandewo/dao/IRoleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yiqiandewo/service/IRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yiqiandewo/service/IRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yiqiandewo/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yiqiandewo/service/impl/RoleServiceImpl.class" afterDir="false" />
-    </list>
+    <list default="true" id="bf1a93d4-4edc-48c0-b4a5-0e70a52752a9" name="Default Changelist" comment="修改了aop的bug 完善了日志查询、日志删除、修改密码功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -316,7 +297,8 @@
       <workItem from="1606805062663" duration="73000" />
       <workItem from="1606821387015" duration="111000" />
       <workItem from="1606828589745" duration="155000" />
-      <workItem from="1607252308541" duration="7134000" />
+      <workItem from="1607252308541" duration="7513000" />
+      <workItem from="1607260167181" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="修改了aop的bug 完善了日志查询、日志删除、修改密码功能">
       <created>1588241108242</created>
@@ -356,54 +338,54 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1602855804518" />
-    <state width="1025" height="305" key="GridCell.Tab.0.bottom" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.0.bottom" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.0.center" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.0.center" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.0.left" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.0.left" timestamp="1607260135213">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.0.right" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607260135213" />
+    <state width="1025" height="305" key="GridCell.Tab.0.right" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.1.bottom" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.1.bottom" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.1.center" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.1.center" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.1.left" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.1.left" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.1.right" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.1.right" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.2.bottom" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.2.bottom" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.2.center" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.2.center" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.2.left" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.2.left" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
-    <state width="1025" height="305" key="GridCell.Tab.2.right" timestamp="1607258641086">
+    <state width="1025" height="305" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
+    <state width="1025" height="305" key="GridCell.Tab.2.right" timestamp="1607260135214">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1025" height="305" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1607258641086" />
+    <state width="1025" height="305" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1607260135214" />
     <state x="345" y="134" key="RollbackChangesDialog" timestamp="1607258081765">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
