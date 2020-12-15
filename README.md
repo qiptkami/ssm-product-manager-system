@@ -1,4 +1,4 @@
-# SSM_productManagerSystem
+# ssm-product-manager-system
 
 首次整合IDEA和GitHub
 
@@ -6,7 +6,11 @@
 
 基于spring + springmvc + mybatis的管理系统
 
+<<<<<<< HEAD
 使用spring aop 进行日志记录，视图页面使用jsp，spring security登录验证和权限控制，thymeleaf模板引擎渲染页面，mybatis框架简化数据库操作，使用pageHelper对结果进行分页显示
+=======
+使用spring aop 进行日志记录，视图页面使用jsp，spring security登录验证和权限控制，mybatis框架简化数据库操作，使用pageHelper对结果进行分页显示
+>>>>>>> 71fe157be1f9bfdb7072805fcf474764fc1b36f2
 
 
 
@@ -28,7 +32,11 @@
 
 - spring对mybatis的整合，在`applicationContext.xml`中配置datasource，SqlSessionFactory工厂（生成dao的代理对象），dao所在包（生成该包下的代理对象）
 
+<<<<<<< HEAD
     
+=======
+      
+>>>>>>> 71fe157be1f9bfdb7072805fcf474764fc1b36f2
 
 ### 3.2、时间格式的转化
 
@@ -457,4 +465,8 @@ public ModelAndView findAll(@RequestParam(name = "page", required = true, defaul
 
 ## 四、最后
 
+<<<<<<< HEAD
 这是我第一次写项目，功能可能相对简单，但是开始写起来很吃力，一些基础功能可能想不明白，但是自己慢慢磨，越到后面越轻松，经过这个项目，自己对于这些技术的使用也相对熟练。
+=======
+这是我第一次写项目，功能可能相对简单，但是开始写起来很吃力，一些基础功能可能想不明白，但是自己慢慢磨，越到后面越轻松，经过这个项目，自己对于这些技术的使用也相对熟练。
+>>>>>>> 71fe157be1f9bfdb7072805fcf474764fc1b36f2
